@@ -71,6 +71,7 @@
         document.documentElement.classList.add("drift-open");
         drift.on("chatClose", function (e) {
           api.widget.hide();
+          window.parent.postMessage("close");
           console.log("closed widget");
         });
         drift.on("message", function (e) {
