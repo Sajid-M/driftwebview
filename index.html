@@ -11,6 +11,18 @@
       }
       .drift-open .drift-frame-controller {
       }
+      /* Center the loading text */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      .centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
     </style>
     <script>
       (function () {
@@ -92,6 +104,6 @@
       });
     </script>
     <!-- End of Async Drift Code -->
-    <h1>Loading......</h1>
+    <h1 class="centered">Loading......</h1>
   </body>
 </html>
